@@ -2,8 +2,9 @@ require("dotenv").config()
 const express = require("express")
 const app = express()
 
+const poly = process.env.POLY
 app.get("/", function (req, res) {
-  res.send(`Hello World!`)
+  res.send(`Hello World! BY ${poly}`)
 })
 
 const port = process.env.PORT
